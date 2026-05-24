@@ -1,0 +1,31 @@
+#flower_container{
+    width: 634px;
+    height: 634px;
+}
+.petals{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+#second_petal,#third_petal{
+    border-radius: 50% 0%;
+}
+#first_petal,#fourth_petal{
+    border-radius: 0% 50%;
+}
+#first_petal{
+    background-color: red;
+    border-bottom-right-radius: 10%;
+}
+#second_petal{
+    background-color: darkblue;
+    border-bottom-left-radius: 10%;
+}
+#third_petal{
+    background-color: green;
+    border-top-right-radius: 10%;
+}
+#fourth_petal{
+    background-color: orange;
+    border-top-left-radius: 10%;
+}

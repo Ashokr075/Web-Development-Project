@@ -1,0 +1,7 @@
+1.Array Objects can be created by using following ways
+i.Array literals([elements]):ArrayObject
+ii.empty array literal([]):ArrayObject
+iii.Array(length):ArrayObject
+iv.Array(elements):ArrayObject
+v.new Array(length):ArrayObject
+vi.new Array(elements):ArrayObject

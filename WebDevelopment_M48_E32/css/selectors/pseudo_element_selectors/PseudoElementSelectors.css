@@ -1,0 +1,168 @@
+/*
+pseudo-element selectors
+selectors::pseudo-element-selector{
+    property: value;
+}
+*/
+*{
+    /* padding: 0px;
+    margin: 0px; */
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+.input_boxes{
+    color: darkblue;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    border-bottom: 3px solid darkblue;
+}
+.input_boxes::placeholder{
+    color: darkblue;
+}
+.headings{
+    font-size: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#core_java_heading{
+    color: darkblue;
+}
+#core_python_heading{
+    color: red;
+}
+#core_java_heading:hover::after{
+    content: "Java";
+    color: red;
+}
+#core_python_heading:hover::before{
+    content: "Core";
+    color: darkblue;
+}
+#web_development_paragraph{
+    font-size: 35px;
+    margin: 0px 10px;
+}
+#web_development_paragraph::first-letter{
+    color: darkblue;
+    font-size: 50px;
+}
+#web_development_paragraph::first-line{
+    color: darkblue;
+}
+#web_development_paragraph::selection,#core_java_heading::selection{
+    color: greenyellow;
+    background-color: gray;
+}
+#full_stack_development_list_heading,#hobbies_list_heading{
+    font-size: 50px;
+}
+#full_stack_development_list,#hobbies_list{
+    font-size: 35px;
+    list-style-type: upper-roman;
+}
+.full_stack_development_list_items::marker{
+    color: red;
+}
+.web_development_list_items::marker{
+    color: darkblue;
+}
+#hobbies_list{
+    list-style-type: none;
+}
+#book_reading_list_item::marker{
+    content: "📖";
+}
+#singing_list_item::marker{
+    content: "🎙️";
+}
+#playing_cricket_list_item::marker{
+    content: "🏏";
+}
+/* spacewalk scrollbar */
+/* body::-webkit-scrollbar{
+    width: 30px;
+    background-color: black;
+    background-size: 75%;
+}
+body::-webkit-scrollbar-thumb{
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar-button{
+    height: 30px;
+    background-image: url(../../../assets/images/Sun.png);
+    background-size: 100%;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-button:active{
+    background-image: url(../../../assets/images/Moon.png);
+} */
+/* official scrollbar */
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: lightgray;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-button{
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-button:active{
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(57, 54, 54);
+}
+/* slider */
+#slider_inputfield{
+    width: 20%;
+    -webkit-appearance: none;
+}
+#slider_inputfield::-webkit-slider-runnable-track{
+    height: 50px;
+    background-color: darkblue;
+    border-radius: 50px;
+    -webkit-appearance: none;
+}
+#slider_inputfield::-webkit-slider-thumb{
+    width: 50px;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+#slider_inputfield::-webkit-slider-thumb:hover{
+    background-color: red;
+}
+/* file picker */
+#file_picker{
+    color: red;
+    font-size: 50px;
+    margin-top: 10px;
+}
+#file_picker::-webkit-file-upload-button{
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+}
+#file_picker::-webkit-file-upload-button:active{
+    color: orange;
+}

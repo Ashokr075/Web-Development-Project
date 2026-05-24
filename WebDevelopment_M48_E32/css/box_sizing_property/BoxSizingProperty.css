@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#box_container{
+    font-size: 30px;
+    font-family: ProductSans;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    border: 30px solid gray;
+    padding: 15px 0px 0px 15px;
+    box-sizing: border-box;
+}

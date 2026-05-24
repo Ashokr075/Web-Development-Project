@@ -1,0 +1,28 @@
+{
+    "songs":[
+        {
+            "songName":"OkaMaaru",
+            "singerName":"Karthik",
+            "composerName":"HarrisJayaraj",
+            "lyricist":"Thamarai",
+            "movieName":"Ghajini",
+            "moviePoster":"https://i.scdn.co/image/ab67616d0000b27396fa4201ff42cd2dcfef14c4"
+        },
+        {
+            "songName":"NaakuNeekuNokia",
+            "singerName":"KunalGanjawala,VasundaraDas",
+            "composerName":"HarrisJayaraj",
+            "lyricist":"BhuvanaChandra",
+            "movieName":"Anniyan",
+            "moviePoster":"https://upload.wikimedia.org/wikipedia/en/1/16/Anniyan_poster.jpg"
+        },
+        {
+            "songName":"Nilluvadhamu",
+            "singerName":"Karthik",
+            "composerName":"DSP",
+            "lyricist":"SVSashthri",
+            "movieName":"UnakkumEnakkum",
+            "moviePoster":"https://i.scdn.co/image/ab67616d0000b2737aaa4a05bc495ad3bae7c9fd"
+        }
+    ]
+}

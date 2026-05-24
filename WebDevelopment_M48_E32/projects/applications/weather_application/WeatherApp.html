@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApplication</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="WeatherApp.js" defer></script>
+</head>
+<body>
+    <div id="weather_report_container">
+        <div id="search_input_container">
+            <input type="text" name="SearchCity" id="search_inputbox" placeholder="Search City">
+            <span id="search_icon_container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+        <div id="city_informations_container">
+            <span id="location_icon_container">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <h1 id="city_name"></h1>
+        </div>
+        <div id="weather_image_temperature_container">
+            <span id="weather_image_container">
+                <img src="" alt="" id="weather_image">
+            </span>
+            <h1 id="weather_status_name"></h1>
+            <h1 id="weather_temperature"><span id="weather_temperature_value"></span><span id="degree_celcius_container"><sup>o</sup>C</span></h1>
+        </div>
+        <div id="humidity_wind_report_container">
+            <div id="humidity_report_container" class="humidity_wind_report_containers">
+                <span id="humidity_icon_container" class="humidity_wind_icons">
+                    <i class="fa-solid fa-droplet"></i>
+                </span>
+                <h1 id="humidity_status">Humidity</h1>
+                <h1 id="humidity_status_value" class="humidity_wind_values"></h1>
+            </div>
+            <div id="wind_report_container" class="humidity_wind_report_containers">
+                <span id="wind_icon_container" class="humidity_wind_icons">
+                    <i class="fa-solid fa-wind"></i>
+                </span>
+                <h1 id="wind_speed">WindSpeed</h1>
+                <h1 id="wind_speed_value" class="humidity_wind_values"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

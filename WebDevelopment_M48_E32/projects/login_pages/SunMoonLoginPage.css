@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    transition: all 750ms ease-in-out;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#sun_moon_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/LeftLargeMountainNight.png),url(../../assets/images/Moon.png),url(../../assets/images/LeftSmallMountainNight.png),url(../../assets/images/SmallSun.png),url(../../assets/images/RightSmallMountainNight.png),url(../../assets/images/RightLargeMountainNight.png),url(../../assets/images/Space.png);
+    background-size: 50%,20%,45%,20%,45%,50%,100% 100%;
+    background-position: 0% 100%,top left,40% 100%,50% 120%,60% 100%,100% 100%,center;
+    background-repeat: no-repeat;
+}
+#login_form_container:hover+#sun_moon_container{
+    background-image: url(../../assets/images/LeftLargeMountainDay.png),url(../../assets/images/Moon.png),url(../../assets/images/LeftSmallMountainDay.png),url(../../assets/images/SmallSun.png),url(../../assets/images/RightSmallMountainDay.png),url(../../assets/images/RightLargeMountainDay.png),url(../../assets/images/Sky.png);
+    background-size: 50%,0%,45%,30%,45%,50%,100% 100%;
+    background-position: -20% 120%,25% 70%,20% 120%,90% -50%,80% 120%,120% 120%,center;
+}
+#login_form_container{
+    width: 35vw;
+    height: 40vh;
+    padding: 0.5%;
+    position: absolute;
+    left: 32.5vw;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5vw;
+    backdrop-filter: blur(1vw);
+    border: 0.25vw solid white;
+    cursor: pointer;
+}
+#login_heading{
+    font-size: 5.5vw;
+    color: white;
+}
+.input_boxes{
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 2.35vw;
+    width: 80%;
+    padding-left: 1.5%;
+    background-color: transparent;
+    border-bottom: 0.25vw solid white;
+}
+.input_boxes::placeholder{
+    color: white;
+}
+#login_button{
+    font-size: 3vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 0.5% 2%;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+#login_button:hover{
+    animation: toAnimateLoginButton 500ms ease-in-out 750ms infinite alternate both;    
+}
+.input_boxes:hover{
+    transform: scale(1.1);
+}
+#login_form_container:hover>#login_heading{
+    color: black;
+    text-shadow: 0px 0px 10px white,0px 0px 20px white,0px 0px 30px white,0px 0px 40px white,0px 0px 50px white,0px 0px 60px white,0px 0px 70px white,0px 0px 80px white;
+}
+#login_form_container:hover>.input_boxes{
+    text-shadow: 2px 2px 2px black;
+}
+/* animation logics */
+@keyframes toAnimateLoginButton{
+    from{
+        transform: skew(0deg,0deg);
+    }
+    50%{
+        transform: skew(30deg,30deg);
+    }
+    to{
+        transform: skew(-30deg,-30deg);
+    }
+}

@@ -1,0 +1,3 @@
+1.Event listener is an inbuilt function.
+2.In event listener, we implement by using addEventListener("eventType",listenerFunction).
+3.When we use event listeners, the listener function will be registered with the node object and event object will be created and the event object access will be given to the Developer.

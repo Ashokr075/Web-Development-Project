@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+body{
+    background-color: black;
+}
+#glowing_button{
+    font-size: 150px;
+    font-family: ProductSans;
+    outline: none;
+    border: none;
+    background-color: greenyellow;
+    padding: 25px;
+    border-radius: 50px;
+    margin: 200px 8.25%;
+    cursor: pointer;
+    transition: box-shadow 500ms linear;
+}
+#glowing_button:hover{
+    box-shadow: 0px 0px 100px greenyellow,0px 0px 300px greenyellow,0px 0px 500px greenyellow,0px 0px 700px greenyellow,0px 0px 900px greenyellow;
+}

@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#brahma_god_image{
+    width: 590px;
+    cursor: pointer;
+}
+#brahma_god_image:hover{
+    animation: toAnimateBrahmaGodImage 1000ms ease-in-out infinite alternate both;
+}
+@keyframes toAnimateBrahmaGodImage{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    8%{
+        filter: hue-rotate(30deg);
+    }
+    16%{
+        filter: hue-rotate(60deg);
+    }
+    24%{
+        filter: hue-rotate(90deg);
+    }
+    32%{
+        filter: hue-rotate(120deg);
+    }
+    40%{
+        filter: hue-rotate(150deg);
+    }
+    48%{
+        filter: hue-rotate(180deg);
+    }
+    56%{
+        filter: hue-rotate(210deg);
+    }
+    64%{
+        filter: hue-rotate(240deg);
+    }
+    72%{
+        filter: hue-rotate(270deg);
+    }
+    80%{
+        filter: hue-rotate(300deg);
+    }
+    88%{
+        filter: hue-rotate(330deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}

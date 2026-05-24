@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#transition_effect_container{
+    width: 250px;
+    height: 250px;
+    background-color: greenyellow;
+    border: 40px solid gray;
+    cursor: pointer;
+    /* transition-property: width,height,border;
+    transition-duration: 1000ms,1000ms,1000ms; */
+    /* transition: width 1000ms,height 1000ms,border 1000ms; */
+}
+#transition_effect_container:hover{
+    width: 500px;
+    height: 500px;
+    border: 80px solid gray;
+    transition: all 500ms;
+}

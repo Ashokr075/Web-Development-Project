@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromiseObject</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductSans;
+        }
+        @font-face{
+            font-family: ProductSans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            padding: 20px;
+        }
+        #place_order_button{
+            font-size: 3.75vw;
+            font-weight: bolder;
+            outline: none;
+            border: none;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 15px;
+            box-shadow: inset 0px 0px 15px gray,inset 0px 0px 30px gray;
+            cursor: pointer;
+        }
+    </style>
+    <script src="PromiseObject.js" defer></script>
+</head>
+<body>
+    <button id="place_order_button">PlaceOrder</button>
+    <h1 id="track_package_promise_object_status"></h1>
+</body>
+</html>

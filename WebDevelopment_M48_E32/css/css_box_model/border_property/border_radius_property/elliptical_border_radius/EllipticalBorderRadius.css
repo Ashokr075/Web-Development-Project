@@ -1,0 +1,33 @@
+.border_radius_containers{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border: 30px solid gray;
+    float: left;
+}
+#circular_border_radius_container{
+    border-radius: 10%;
+    border-radius: 10% 20%;
+    border-radius: 10% 20% 30% 40%;
+}
+#elliptical_border_radius_container{
+    border-radius: 10%/50%;
+    border-radius: 10% 50%/50% 10%;
+    border-radius: 10% 20% 30% 40%/40% 30% 20% 10%;
+}
+#circular_container{
+    border-radius: 50%;
+}
+#elliptical_container{
+    width: 300px;
+    height: 150px;
+    border-radius: 50%;
+}
+#water_droplet_container{
+    border: none;
+    background-image: linear-gradient(lightblue,darkblue);
+    border-radius: 99% 1% 62% 38%/58% 0% 100% 42%;
+}
+/*
+to design complicated elliptical shapes, we can have to vist website, 9elements.github.
+*/

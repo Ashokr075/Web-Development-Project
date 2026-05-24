@@ -1,0 +1,8 @@
+1.To call the function or to perform the operation after some delay, Go for set and clear functions.
+i.setTimeout(timerHandler,timeOut):number
+ii.setInterval(timerHandler,timeOut):number
+
+If we want to stop the function call, we have to use below functions.
+
+iii.clearTimeout(setTimeoutID):void
+iv.clearInterval(setIntervalID):void

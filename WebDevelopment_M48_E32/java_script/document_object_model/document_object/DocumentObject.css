@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    padding: 20px;
+}
+#topic_heading{
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+}
+#buttons_container{
+    width: 35vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons{
+    color: white;
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#subscribe_button{
+    background-color: red;
+    border-radius: 50px;
+}
+#follow_button{
+    background-color: royalblue;
+    border-radius: 15px;
+}

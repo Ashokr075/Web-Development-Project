@@ -1,0 +1,30 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansBold.ttf);
+}
+#dummy_container{
+    height: 50px;
+}
+#google_doodle_container{
+    width: fit-content;
+}
+.google_doodles{
+    font-size: 130px;
+    float: left;
+    font-family: ProductSans;
+}
+.text_royalblue{
+    color: royalblue;
+}
+.text_red{
+    color: red;
+}
+#o_letter{
+    color: orange;
+}
+#l_letter{
+    color: green;
+}
+.google_doodle_marquees{
+    height: 300px;
+}

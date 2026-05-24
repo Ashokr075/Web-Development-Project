@@ -1,0 +1,28 @@
+Document Object Model:
+    1.Document Object Model is the tree structured representation given by W3Consortium.
+    2.It is the interface between document object and java script programing.
+    3.We learn document object model to perform manipulation on document object model.
+    4.When we perform document object model manipulation, the same changes what we make will be reflected on document object too.
+    5.Document object model will be manipulated by using selectors and they are used for selecting the node objects.
+    6.We have two types of selectors in java script.
+        i.direct selectors
+        ii.in-direct selectors
+    7.direct selectors will select the node objects directly by using the document object properties.
+        i.body
+        ii.title
+        iii.forms
+        iv.images
+        v.anchors
+    8.in-direct selectors will select the node objects in-directly by using the document object functions.
+        i.getElementById("id_value"):HTMLElement
+        ii.getElementsByName("name_value"):NodeList
+        iii.getElementsByTagName("tagname"):HTMLCollection
+        iv.getElementsByClassName("class_value"):HTMLCollection
+        v.querySelector("#id_value" | ".class_value" | "tagname"):HTMLFirstElement
+        vi.querySelectorAll("#id_value" | ".class_value" | "tagname"):NodeList
+    9.Element will not only be created by HTML side, it can also be created from js side by using createElement("tagname").
+    10.The created node object should be appended by using appendChild().
+    11.Element will not only be styled from CSS side, it can also be styled from js side by using style JS property and all the style JS properties should be represented by using camelCasing.
+    12.We can recieve the input in two ways,
+        i.prompt pop up box.
+        ii.value JS property.    

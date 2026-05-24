@@ -1,0 +1,16 @@
+MathObject :
+1.MathObject is an intrinsic object which, developer cannot create the MathObject, rather He can use the object which is pre-defined.
+2.Whenever developer wants to perform mathematical operations, We go for MathObject.
+3.Some functions of MathObject provides mathematical operations functionality, which is given below.
+
+PI:piValue
+pow(baseValue,powerValue):poweredValue
+sqrt(number):squareRootNumber
+cbrt(number):cubeRootNumber
+max(elements):maximumElement
+min(elements):minimumElement
+round(number):roundedNumber
+trunc(number):integer
+ceil(number):topNearestInteger
+floor(number):bottomNearestInteger
+random():randomNumber(between 0 to 1)

@@ -1,0 +1,2 @@
+1.APIFetching will be done by using fetch("api_url"):Promise<Response>
+2.After fetching, that promise object which contains Response object can be handled by using then() and catch() or async and await keywords.

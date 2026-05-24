@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidationForm</title>
+    <link rel="stylesheet" href="ValidationForm.css">
+</head>
+<body>
+    <form action="" id="validation_form_container">
+        <h1 id="validation_form_heading">ValidationForm.</h1>
+        <input type="text" name="Username" id="username_inputbox" class="input_boxes" placeholder="Username" minlength="5" maxlength="25">
+        <input type="password" name="Password" id="password_inputbox" class="input_boxes" placeholder="Password" minlength="8" maxlength="15">
+        <input type="number" name="Age" id="age_inputbox" class="input_boxes" placeholder="Age" min="18" max="32">
+        <div id="radio_buttons_container">
+            <h1 id="gender_heading">Gender</h1>
+            <input type="radio" name="Gender" id="male_radiobutton" class="radio_buttons"> <label for="">Male</label>
+            <input type="radio" name="Gender" id="female_radiobutton" class="radio_buttons"> <label for="">Female</label>
+            <input type="radio" name="Gender" id="trans_gender_radiobutton" class="radio_buttons"> <label for="">TransGender</label>
+            <input type="radio" name="Gender" id="others_radiobutton" class="radio_buttons"> <label for="">Others</label>
+        </div>
+        <div id="checkbox_container">
+            <input type="checkbox" name="TermsCheckBox" id="terms_condition_checkbox"> <label for="">Terms and Conditions.</label>
+        </div>
+        <input type="submit" value="Validate." id="validate_button">
+    </form>
+</body>
+</html>

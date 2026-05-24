@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#gray_color_ball{
+    width: 10vw;
+    height: 10vw;
+    background-color: lightgray;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px gray,inset 0px 0px 30px gray;
+    transition: transform 2000ms linear;
+}
+#buttons_container{
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 42.5vh;
+    left: 35vw;
+}
+.buttons{
+    font-size: 3.75vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 15px gray;
+    cursor: pointer;
+}
+.buttons:active{
+    transform: scale(0.85);
+}

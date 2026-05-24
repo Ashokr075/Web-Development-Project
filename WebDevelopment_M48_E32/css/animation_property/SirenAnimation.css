@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#sirens_container{
+    width: 750px;
+    height: 300px;
+    position: relative;
+    top: 175px;
+    left: 265px;
+}
+.sirens{
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-radius: 100px;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-play-state: running;
+}
+#red_siren{
+    animation-name: toAnimateRedSiren;
+}
+#blue_siren{
+    animation-name: toAnimateBlueSiren;
+}
+/* animation logics */
+@keyframes toAnimateRedSiren{
+    from{
+        background-color: red;
+        box-shadow: 0px 0px 10px red,0px 0px 30px red,0px 0px 50px red,0px 0px 70px red,0px 0px 90px red,0px 0px 110px red,0px 0px 130px red,0px 0px 150px red;
+    }
+    to{
+        background-color: transparent;
+    }
+}
+@keyframes toAnimateBlueSiren{
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: blue;
+        box-shadow: 0px 0px 10px blue,0px 0px 30px blue,0px 0px 50px blue,0px 0px 70px blue,0px 0px 90px blue,0px 0px 110px blue,0px 0px 130px blue,0px 0px 150px blue;
+    }
+}

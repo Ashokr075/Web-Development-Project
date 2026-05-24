@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#buttons_container{
+    width: 50vw;
+    height: 50vh;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+    top: -10%;
+    left: -15%;
+}
+.color_buttons{
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#red_button{
+    background-color: red;
+}
+#green_button{
+    background-color: green;
+}
+#darkblue_button{
+    background-color: darkblue;
+}

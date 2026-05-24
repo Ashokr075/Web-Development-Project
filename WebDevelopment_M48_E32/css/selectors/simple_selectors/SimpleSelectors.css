@@ -1,0 +1,150 @@
+/*
+universal selector (*)
+*{
+    property: value;
+}
+*/
+*{
+    font-size: 50px;
+}
+/*
+element selector (tagname)
+tagname{
+    property: value;
+}
+*/
+/* div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+h1{
+    color: darkblue;
+}
+input{
+    color: red;
+    outline: none;
+    border: 3px solid darkblue;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+} */
+/*
+id selector (#)
+#id_value{
+    property: value;
+}
+*/
+#grand_parent_container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#parent_container{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+}
+#grand_child_container{
+    width: 50%;
+    height: 50%;
+    background-color: darkblue;
+}
+#core_java_heading{
+    color: red;
+}
+#core_python_heading{
+    color: darkblue;
+}
+#web_development_heading{
+    width: fit-content;
+    color: orange;
+    background-color: black;
+}
+/* element selector (tagname) */
+input{
+    outline: none;
+}
+/* id selector (#) */
+#username_inputbox{
+    color: red;
+    border: 3px solid red;
+}
+#password_inputbox{
+    color: darkblue;
+    border: 3px solid darkblue;
+}
+/* element selector (tagname) */
+button{
+    outline: none;
+    border: none;
+    color: white;
+}
+/* id selector (#) */
+#subscribe_button{
+    background-color: red;
+    border-radius: 30px;
+}
+#follow_button{
+    background-color: royalblue;
+    border-radius: 10px;
+}
+/*
+class selector (.)
+.class_value{
+    property: value;
+}
+*/
+.text_darkblue{
+    color: darkblue;
+}
+.bc_lightblue{
+    background-color: lightblue;
+}
+.increase_fontsize{
+    font-size: 65px;
+}
+.bolded_content{
+    color: white;
+    background-color: black;
+}
+#blood_group_details_table_caption{
+    color: white;
+    background-color: purple;
+}
+#blood_group_details_table_head_first_row{
+    color: orange;
+    background-color: black;
+}
+/*
+group selector
+tagname_one,tagname_two,tagname_three{
+    property: value;
+}
+#id_value_one,#id_value_two,#id_value_three{
+    property: value;
+}
+.class_value_one,.class_value_two,.class_value_three{
+    property: value;
+}
+#id_value,.class_value,tagname{
+    property: value;
+}
+*/
+#blood_group_details_table_body_first_row,#blood_group_details_table_body_third_row,#blood_group_details_table_body_fifth_row{
+    background-color: lightgray;
+}
+#blood_group_details_table_body_second_row,#blood_group_details_table_body_fourth_row{
+    background-color: lavenderblush;
+}
+/* class selector */
+/* .bc_lightgray_rows{
+    background-color: lightgray;
+}
+.bc_lavender_blush_rows{
+    background-color: lavenderblush;
+} */

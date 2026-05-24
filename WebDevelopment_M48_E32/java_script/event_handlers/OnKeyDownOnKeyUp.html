@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnKeyDownOnKeyUpEventHandler</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #super_mario_image{
+            width: 150px;
+        }
+        #super_mario_marquee{
+            transition: transform 500ms;
+        }
+    </style>
+    <script src="OnKeyDownOnKeyUp.js" defer></script>
+</head>
+<body onkeydown="makeSuperMarioJump()" onkeyup="makeSuperMarioComeBack()">
+    <marquee behavior="" direction="right" id="super_mario_marquee" scrollamount="65">
+        <img src="../../assets/images/SuperMario.gif" alt="SuperMarioImage" id="super_mario_image">
+    </marquee>
+</body>
+</html>

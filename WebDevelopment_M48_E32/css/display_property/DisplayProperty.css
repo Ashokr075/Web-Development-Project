@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    padding: 10px;
+}
+#heading{
+    width: 50%;
+    font-size: 100px;
+    color: gray;
+    background-color: greenyellow;
+    display: inline;
+}
+#block{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    display: inline;
+}
+#fieldset{
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+    display: inline;
+}
+#legend{
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: purple;
+}
+#span{
+    width: 50%;
+    font-size: 50px;
+    background-color: lightpink;
+    display: block;
+}
+#italics{
+    width: 50%;
+    font-size: 50px;
+    background-color: lightblue;
+    display: block;
+}
+#strong{
+    width: 80%;
+    font-size: 75px;
+    color: orange;
+    background-color: black;
+    display: inline-block;
+}

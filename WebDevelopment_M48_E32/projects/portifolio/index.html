@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashok Reddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<canvas id="particles"></canvas>
+
+<header class="header">
+  <nav class="nav">
+    <div class="logo">Ashok Reddy</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero fade-in">
+  <div class="glass">
+    <h1>Ashok <span class="accent">Reddy</span></h1>
+    <p class="tagline">
+      ECE Graduate (2025) | Java, Python, Data Analytics | IEEE Author
+    </p>
+    <p class="subtitle">
+      Building data-driven, software-centric, and simulation-based engineering solutions.
+    </p>
+
+    <div class="cta">
+      <a href="#contact" class="btn">📩 Contact</a>
+      <a href="resume.pdf" class="btn outline" download>📄 Resume</a>
+    </div>
+  </div>
+
+  <div class="glass">
+    <h3>📍 Location</h3>
+    <p>Chennai, Tamil Nadu, India</p>
+    <p>Open to Full-Time & Internship Roles</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade-in">
+  <h2>🙋 About Me</h2>
+  <div class="glass">
+    <p>
+      I’m an Electronics & Communication Engineering graduate who builds
+      data-driven and software-centric solutions using Java, SQL, Python,
+      and analytical problem-solving. My work spans backend logic,
+      predictive modeling, and simulation-based engineering.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section fade-in">
+  <h2>💼 Experience</h2>
+
+  <div class="timeline">
+    <div class="glass">
+      <h3>CodSoft — Python Programming Intern</h3>
+      <p>July 2023 – September 2023</p>
+      <p>
+        Worked on Python-based problem solving, logic building,
+        and real-world programming exercises.
+      </p>
+    </div>
+
+    <div class="glass">
+      <h3>RETCH Solution Pvt. Ltd.</h3>
+      <p>Python Completion Certification (Feb 2023 – Mar 2023)</p>
+      <p>
+        Gained hands-on exposure to Python fundamentals and
+        practical implementation techniques.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade-in">
+  <h2>🚀 Projects & Publications</h2>
+
+  <div class="project-grid">
+    <div class="glass project-card" onclick="openModal('p1')">
+      <h3>AI Strategy for Financial Risk</h3>
+      <p>Tata iQ Data Analytics Simulation</p>
+    </div>
+
+    <div class="glass project-card" onclick="openModal('p2')">
+      <h3>Movie Ticket Booking System</h3>
+      <p>Core Java | OOP</p>
+    </div>
+
+    <div class="glass project-card" onclick="openModal('p3')">
+      <h3>Microstrip Antenna for Dental Biosensing</h3>
+      <p>IEEE Conference Paper</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section fade-in">
+  <h2>🛠 Skills</h2>
+  <div class="glass">
+    <div class="skill"><span>Java / Core Java</span><div class="bar" data-level="85"></div></div>
+    <div class="skill"><span>Python</span><div class="bar" data-level="80"></div></div>
+    <div class="skill"><span>SQL</span><div class="bar" data-level="75"></div></div>
+    <div class="skill"><span>HTML & CSS</span><div class="bar" data-level="70"></div></div>
+    <div class="skill"><span>Data Analytics / Power BI</span><div class="bar" data-level="78"></div></div>
+    <div class="skill"><span>HFSS / RF Simulation</span><div class="bar" data-level="72"></div></div>
+    <div class="skill"><span>Git / GitHub</span><div class="bar" data-level="70"></div></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section fade-in">
+  <h2>🎓 Education</h2>
+  <div class="timeline">
+    <div class="glass">
+      <h3>B.E. – Electronics & Communication Engineering</h3>
+      <p>Sathyabama Institute of Science & Technology (2021–2025)</p>
+    </div>
+    <div class="glass">
+      <h3>Intermediate</h3>
+      <p>Sri Sadhana Junior College (2019–2021)</p>
+    </div>
+    <div class="glass">
+      <h3>SSC</h3>
+      <p>Alpha High School (2018–2019)</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade-in">
+  <h2>📬 Contact</h2>
+  <div class="glass">
+    <p>Email: <strong>ashokr13460@gmail.com</strong></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ashok-reddy-895b38251" target="_blank">View Profile</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Ashok Reddy • Data • Software • Engineering
+</footer>
+
+<!-- MODALS -->
+<div class="modal" id="p1"><div class="modal-content">
+  <span onclick="closeModal('p1')">✖</span>
+  <h3>AI Strategy for Financial Risk</h3>
+  <p>Built ML models using Python, Pandas & scikit-learn to reduce credit delinquency.</p>
+</div></div>
+
+<div class="modal" id="p2"><div class="modal-content">
+  <span onclick="closeModal('p2')">✖</span>
+  <h3>Movie Ticket Booking System</h3>
+  <p>Core Java application with OOP design, modular flows & automated ticket IDs.</p>
+</div></div>
+
+<div class="modal" id="p3"><div class="modal-content">
+  <span onclick="closeModal('p3')">✖</span>
+  <h3>IEEE Publication</h3>
+  <p>Compact & biocompatible microstrip antenna for non-invasive dental biosensing.</p>
+</div></div>
+
+<script src="script.js"></script>
+</body>
+</html>

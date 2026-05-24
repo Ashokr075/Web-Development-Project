@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    width: 100vw;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#songs_data_table{
+    font-size: 1.5vw;
+}
+#songs_data_table_caption{
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+}
+#songs_data_table_head{
+    font-size: 2vw;
+    color: orange;
+    background-color: black;
+}
+.songs_data_table_head_cells{
+    padding: 10px;
+    border-radius: 10px;
+}
+#songs_data_table_body{
+    text-align: center;
+}

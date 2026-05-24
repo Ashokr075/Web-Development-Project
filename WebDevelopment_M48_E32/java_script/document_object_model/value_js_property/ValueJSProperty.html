@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValueJSProperty</title>
+    <link rel="stylesheet" href="ValueJSProperty.css">
+    <script src="ValueJSProperty.js" defer></script>
+</head>
+<body>
+    <form action="" id="login_form_container">
+        <h1 id="login_heading">Login</h1>
+        <input type="text" id="username_inputbox" class="input_boxes" placeholder="Username">
+        <input type="password" id="password_inputbox" class="input_boxes" placeholder="Password">
+        <input type="button" value="LOGIN." id="login_button" onclick="printLoginCredentials()">
+        <span id="error_statement"></span>
+    </form>
+    <h1 id="login_credentials_heading">
+        <span class="credentials_span" id="username_span"></span>
+        <br>
+        <span class="credentials_span" id="password_span"></span>
+    </h1>
+</body>
+</html>

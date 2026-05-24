@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#color_blocks_container{
+    width: 600px;
+    height: 200px;
+    margin: 205px auto;
+    padding-bottom: 20px;
+    border-bottom: 20px solid black;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.color_blocks{
+    width: 200px;
+    height: 100%;
+    float: left;
+    border-radius: 30%;
+}
+#red_color_block{
+    background-color: red;
+}
+#darkblue_color_block{
+    background-color: darkblue;
+}
+#gray_color_block{
+    background-color: gray;
+}
+#color_blocks_container:hover>.color_blocks{
+    transition: all 250ms ease-in-out;
+}
+/*
+rotate functions
+transform: rotateX(angle);
+transform: rotateY(angle);
+transform: rotateZ(angle);
+transform: rotate(z-axis_angle);
+*/
+#color_blocks_container:hover>#red_color_block{
+    transform: rotateX(360deg);
+}
+#color_blocks_container:hover>#darkblue_color_block{
+    transform: rotateY(360deg);
+}
+#color_blocks_container:hover>#gray_color_block{
+    transform: rotateZ(360deg);
+    transform: rotate(360deg);
+}
+/*
+skew functions
+transform: skewX(angle);
+transform: skewY(angle);
+transform: skew(x-axis_angle);
+transform: skew(x-axis_angle,y-axis_angle);
+*/
+#color_blocks_container:hover>#red_color_block{
+    transform: skewX(360deg);
+}
+#color_blocks_container:hover>#darkblue_color_block{
+    transform: skewY(360deg);
+}
+#color_blocks_container:hover>#gray_color_block{
+    transform: skew(360deg,360deg);
+}
+/*
+scale functions
+transform: scaleX(scaling_factor);
+transform: scaleY(scaling_factor);
+transform: scale(scaling_factor);
+transform: scale(x-axis_scaling_factor,y-axis_scaling_factor);
+*/
+#color_blocks_container:hover>#red_color_block{
+    transform: scaleX(1.5);
+}
+#color_blocks_container:hover>#darkblue_color_block{
+    transform: scaleY(1.5);
+}
+#color_blocks_container:hover>#gray_color_block{
+    transform: scale(1.5,2.5);
+}
+/*
+translate functions
+transform: translateX(co-ordinate_value);
+transform: translateY(co-ordinate_value);
+transform: translate(x-axis_co-ordinate_value);
+transform: translate(x-axis_co-ordinate_value,y-axis_co-ordinate_value);
+*/
+#color_blocks_container:hover>#red_color_block{
+    transform: translateX(-100px);
+}
+#color_blocks_container:hover>#darkblue_color_block{
+    transform: translateY(-100px);
+}
+#color_blocks_container:hover>#gray_color_block{
+    transform: translate(100px);
+}

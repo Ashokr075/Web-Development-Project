@@ -1,0 +1,106 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+}
+/* common codes */
+#color_block{
+    box-shadow: 0px 0px 10px gray,0px 0px 20px gray;
+}
+/*
+color block responsiveness
+mobile first approach
+*/
+@media only screen and (max-width:320px){
+    #color_block{
+        width: 30vw;
+        height: 30vw;
+        background-color: red;
+        border-radius: 30%;
+    }
+}
+/* mobile small screen responsiveness */
+@media only screen and (min-width:320px){
+    #color_block{
+        width: 35vw;
+        height: 35vw;
+        background-color: greenyellow;
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    }
+}
+/* mobile medium screen responsiveness */
+@media only screen and (min-width:375px){
+    #color_block{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 81% 19% 82% 18%/44% 54% 46% 56%;
+        background-image: radial-gradient(lightblue,lightpink);
+    }
+}
+/* mobile large screen responsiveness */
+@media only screen and (min-width:425px){
+    #color_block{
+        width: 45vw;
+        height: 45vw;
+        background-image: radial-gradient(circle at top,orange,black);
+        border-radius: 10% 50%/50% 10%;
+    }
+}
+/* tablet screen responsiveness */
+@media only screen and (min-width:768px){
+    #color_block{
+        width: 50vw;
+        height: 50vh;
+        background-image: radial-gradient(gray,purple);
+        border-radius: 51% 49% 0% 100%/100% 100% 0% 0%;
+    }
+}
+/* laptop screen responsiveness */
+@media only screen and (min-width:1024px){
+    #color_block{
+        width: 50vw;
+        height: 50vw;
+        background-image: radial-gradient(white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black);
+        border-radius: 50%;
+    }
+}
+@media only screen and (min-width:1440px){
+    #color_block{
+        width: 50vw;
+        height: 50vh;
+        background-image: linear-gradient(orange,white,green);
+        border-radius: 0%;
+    }
+}
+/* navigation bar responsiveness */
+@media only screen and (orientation:landscape){
+    #navigation_bar{
+        width: 100%;
+        height: 85px;
+        background-color: darkblue;
+    }
+}
+@media only screen and (orientation:portrait){
+    #navigation_bar{
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+    }
+}
+/*
+@media firstMediaType,secondMediaType and (mediaProperty: mediaPropertyValue){
+    selector{
+        css property1: css property value1;
+        css property2: css property value2;
+    }
+}
+@media only mediaType and (mediaProperty: mediaPropertyValue){
+    selector{
+        css property1: css property value1;
+        css property2: css property value2;
+    }
+}
+*/

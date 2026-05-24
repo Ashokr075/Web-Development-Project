@@ -1,0 +1,12 @@
+1.StringObjects will be created by using following four ways.
+i.String literals("" | ''):string
+ii.String(anyData):string
+iii.new String(anyData):StringObject
+iv.template literals(``):string
+
+2.We go for template literals becoz of following reasons:
+i.double quoted string can't handle double quoted string, single quoted string can't handle single quoted string.
+ii.But template literals can handle double quoted string as well as single quoted string.
+iii.Even for performing concatenation easily, we go for template literals.
+iv.By performing the concatenation by using + operator, We will be more confused to concatenate the variables. So, We have to use template literals becoz the process of concatenating in easy way, we call it as string interpolation.
+v.template literals will be represented by using bacticks(``).

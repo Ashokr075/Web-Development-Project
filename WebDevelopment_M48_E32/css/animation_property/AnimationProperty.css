@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#red_block{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#red_block:hover{
+    animation-name: toAnimateRedBlockUndergoWPattern;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5000ms;
+    animation-iteration-count: infinite;
+}
+/* animation logics */
+@keyframes toAnimateRedBlockUndergoWPattern{
+    /* first keyframe */
+    0%{
+        transform: translate(0px,0px);
+    }
+    /* second keyframe */
+    25%{
+        transform: translateY(550px) scale(0);
+        background-color: yellow;
+    }
+    /* third keyframe */
+    50%{
+        transform: translate(275px,275px) scale(3);
+        background-color: greenyellow;
+        box-shadow: 0px 0px 10px gray,0px 0px 20px gray,0px 0px 30px gray;
+    }
+    /* fourth keyframe */
+    75%{
+        transform: translate(550px,550px) scale(0);
+        background-color: gray;
+    }
+    /* fifth keyframe */
+    100%{
+        transform: translate(550px,0px);
+        background-color: darkblue;
+    }
+}
+/*
+@keyframes animationName{
+    first frame
+    from{
+        property: value;
+    }
+    second frame
+    50%{
+        property: value;
+    }
+    third frame
+    to{
+        property: value;
+    }   
+}
+
+@keyframes animationName{
+    10%{
+        property: value;
+    }
+    50%{
+        property: value;
+    }
+    90%{
+        property: value;
+    }
+}
+*/

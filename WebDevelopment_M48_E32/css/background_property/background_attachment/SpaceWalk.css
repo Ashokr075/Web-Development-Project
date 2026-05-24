@@ -1,0 +1,27 @@
+body{
+    height: 3000px;
+    background-image: url(../../../assets/images/Sun.png),url(../../../assets/images/Earth.png),url(../../../assets/images/Moon.png),url(../../../assets/images/Satellite.png),url(../../../assets/images/Space.png);
+    background-size: 50%,25%,12.5%,10%,50%;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,repeat;
+    background-position: -200px -200px,bottom left,300px 2600px,350px 2800px,center;
+    background-attachment: fixed,scroll,scroll,scroll,scroll;
+    /* background: color image size repeat position clip attachment; */
+    /* background: url(../../../assets/images/Sun.png),url(../../../assets/images/Earth.png),url(../../../assets/images/Moon.png),url(../../../assets/images/Satellite.png),url(../../../assets/images/Space.png) 50%,25%,12.5%,10%,50% no-repeat,no-repeat,no-repeat,no-repeat,repeat -200px -200px,bottom left,300px 2600px,350px 2800px,center fixed,scroll,scroll,scroll,scroll; */
+}
+#rocket_marquee{
+    width: 25%;
+    height: 3000px;
+    float: right;
+}
+#rocket_image{
+    width: 100%;
+}
+#astronaut_parent_marquee{
+    width: 75%;
+}
+#astronaut_child_marquee{
+    height: 3000px;
+}
+#astronaut_image{
+    width: 200px;
+}

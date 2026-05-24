@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#gallery_images_container{
+    width: fit-content;
+    margin: 430px 0px 0px 27.5%;
+}
+.gallery_images{
+    width: 250px;
+    height: 150px;
+    margin-left: -150px;
+    border-radius: 50px;
+    transform: skew(-30deg);
+    cursor: pointer;
+    transition: transform 750ms;
+}
+#image_gallery_heading{
+    color: purple;
+    font-size: 50px;
+    font-family: ProductSans;
+    text-align: center;
+}
+#beach_ramp_image:hover{
+    transform: skew(0deg) translate(325px,-290px) rotateY(360deg) scale(2.75);
+}
+#forest_image:hover{
+    transform: skew(0deg) translate(221px,-290px) rotateY(360deg) scale(2.75);
+}
+#mount_fuji_image:hover{
+    transform: skew(0deg) translate(117px,-290px) rotateY(360deg) scale(2.75);
+}
+#mount_himalayas_image:hover{
+    transform: skew(0deg) translate(13px,-290px) rotateY(360deg) scale(2.75);
+}
+#parachute_image:hover{
+    transform: skew(0deg) translate(-91px,-290px) rotateY(360deg) scale(2.75);
+}
+#ocean_image:hover{
+    transform: skew(0deg) translate(-195px,-290px) rotateY(360deg) scale(2.75);
+}
+#sunrise_image:hover{
+    transform: skew(0deg) translate(-299px,-290px) rotateY(360deg) scale(2.75);
+}

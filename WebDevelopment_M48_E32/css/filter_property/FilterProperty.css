@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#color_block{
+    width: 20vw;
+    height: 40vh;
+    background-color: teal;
+    border-radius: 30%;
+    position: absolute;
+    /* offset properties */
+    top: 30vh;
+    left: 40vw;
+    cursor: pointer;
+}
+#earth_image{
+    width: 500px;
+    padding: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+#earth_image:hover{
+    filter: grayscale(100%);
+    filter: invert(100%);
+    filter: none;
+    filter: opacity(100%);
+    filter: sepia(100%);
+    filter: drop-shadow(0px 0px 10px cadetblue) drop-shadow(0px 0px 20px cadetblue) drop-shadow(0px 0px 30px cadetblue) drop-shadow(0px 0px 40px cadetblue) drop-shadow(0px 0px 50px cadetblue);
+}
+#mr_bean_image{
+    width: 300px;
+    position: absolute;
+    right: 0vw;
+    cursor: pointer;
+}
+#mr_bean_image:hover{
+    filter: invert(100%);
+    filter: none;
+    filter: opacity(50%);
+    filter: sepia(100%);
+    filter: drop-shadow(0px 0px 10px gray) drop-shadow(0px 0px 20px gray);
+}
+#color_block:hover{
+    filter: blur(1vw);
+    filter: brightness(100%);
+    filter: contrast(50%);
+    filter: grayscale(100%);
+    filter: hue-rotate(0deg);
+    filter: invert(100%);
+    filter: none;
+    filter: opacity(50%);
+    filter: saturate(100%);
+    filter: sepia(100%);
+    filter: drop-shadow(0px 0px 10px black) drop-shadow(0px 0px 20px black);
+}

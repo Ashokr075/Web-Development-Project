@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent_blocks{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+}
+#red_block{
+    background-color: red;
+    /* relative positioning will make the element to be positioned from its static position */
+    position: relative;
+    /*
+    offset properties 
+    1.top: ;
+    2.right: ;
+    3.bottom: ;
+    4.left: ;
+    */
+    top: 20px;
+    left: 20px;
+}
+#darkblue_block{
+    background-color: darkblue;
+    position: relative;
+}
+#yellow_block{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 25%;
+    /* absolute positioning will make the element to be positioned from its parent position */
+    position: absolute;
+    /* offset properties */
+    bottom: 5%;
+    left: 25%;
+}

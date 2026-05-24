@@ -1,0 +1,24 @@
+Error Handling:
+    1.Error is a mistake.
+    2.Errors are divided into two types.
+        i.Syntax errors
+        ii.Runtime errors
+    3.We are here to handle runtime error, not syntax errors.
+    4.Syntax errors are not handled, it is resolved.
+    5.Syntax errors are deducted before the code runs.
+    6.Runtime errors are deducted while the code runs.
+    7.It is mandatory to handle the errors, if we don't handle...Our rest of the code will never be executed even if it is not executed.
+    8.We can handle the runtime errors by using try, catch and finally blocks.
+    Syntax:
+    try{
+        
+    }
+    catch(errorObject){
+        
+    }
+    finally{
+        
+    }
+    9.try block will contain the code, which have error.
+    10.catch block will contain the code, which acts as a recovery statements.
+    11.finally block will contain the code, which is important code or connection closing statements.

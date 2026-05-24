@@ -1,0 +1,7 @@
+JavaScriptObjects:
+1.JavaScriptObjects are used for storing the complex data.
+2.We can create the java script objects in four ways:
+    i.java script object literals({})
+    ii.new Object()
+    iii.constructor function
+    iv.class declaration

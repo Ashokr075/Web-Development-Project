@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    margin: 15px;
+    padding: 15px;
+    border: 3px solid black;
+}
+#web_development_heading{
+    width: fit-content;
+    font-size: 65px;
+    border: 25px inset gray;
+    /* specific padding properties */
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    /* shorthand padding property */
+    padding: 15px;
+}
+#learn_more_button{
+    font-size: 50px;
+    outline: none;
+    border: 15px solid darkblue;
+    /* specific margin properties */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* shorthand margin property */
+    margin: 15px 0px;
+    padding: 15px;
+}
+#earth_image{
+    width: 250px;
+    border: 40px groove gray;
+    padding: 15px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+</head>
+<body>
+    <fieldset style="border: 3px solid black;width: fit-content;">
+        <legend style="font-size: 50px;text-align: center;color: orange;background-color: black;"><b>RegistrationForm</b></legend>
+        <form action="" style="text-align: center;">
+            <input type="text" name="Username" id="username_inputbox" placeholder="Username" style="font-size: 30px;" required> <sup style="font-size: 30px;color: red;"><b>*</b></sup>
+            <br>
+            <input type="password" name="Password" id="username_inputbox" placeholder="Password" style="font-size: 30px;" required> <sup style="font-size: 30px;color: red;"><b>*</b></sup>
+            <br>
+            <input type="number" name="AadhaarCardNumber" id="aadhaar_card_number_inputbox" placeholder="AadhaarCardNumber" style="font-size: 30px;" value="675758758757" readonly>
+            <br>
+            <input type="text" name="PANCardNumber" id="pan_card_number_inputbox" placeholder="PANCardNumber" style="font-size: 30px;" value="HT65H3W2Q1" readonly>
+            <br>
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="text" style="width: 20px;height: 25px;font-size: 30px;text-align: center;" minlength="1" maxlength="1">
+            <input type="button" value="ValidateOTP" style="font-size: 30px;outline: none;border: none;background-color: lightgray;border-radius: 30px;cursor: pointer;" disabled>
+            <br>
+            <input type="number" name="Age" id="age_inputbox" placeholder="Age" style="font-size: 30px;width: 370px;" min="18" max="32">
+            <br>
+            <input type="date" name="DatePicker" id="date_picker" style="font-size: 30px;" min="2025-08-18" max="2025-08-23">
+            <br>
+            <input type="time" name="TimePicker" id="time_picker" style="font-size: 30px;" min="06:00" max="18:00">
+            <br>
+            <!-- dropdown list -->
+            <select name="CityDropDownList" id="city_drop_down_list" style="font-size: 30px;">
+                <option>--SelectCity--</option>
+                <optgroup label="AndhraPradesh">
+                    <option>Ongole</option>
+                    <option>Vishakapatnam</option>
+                </optgroup>
+                <optgroup label="Telangana">
+                    <option>Hyderabad</option>
+                    <option>HiTechCity</option>
+                </optgroup>
+                <optgroup label="Karnataka">
+                    <option>Bengaluru</option>
+                    <option>Bidhar</option>
+                </optgroup>
+            </select>
+            <br>
+            <!-- data list -->
+            <input type="text" name="Couse" id="course_inputbox" placeholder="Couse" style="font-size: 30px;" list="course_data_list">
+            <datalist id="course_data_list">
+                <option>Azure</option>
+                <option>AWS</option>
+                <option>CoreJava</option>
+                <option>CorePython</option>
+                <option>DataScience</option>
+                <option>ArtificialIntelligance</option>
+                <option>WebDevelopment</option>
+                <option>OracleSQL</option>
+                <option>PLSQL</option>
+                <option>MongoDB</option>
+            </datalist>
+            <br><br>
+            <textarea name="Address" id="address" placeholder="Address" style="font-size: 30px;outline: none;resize: none;border: none;background-color: lightgray;border-radius: 30px;" cols="25" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Register" style="font-size: 45px;outline: none;border: none;color: orange;background-color: black;border-radius: 30px;">
+        </form>
+    </fieldset>
+</body>
+</html>

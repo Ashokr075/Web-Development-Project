@@ -1,0 +1,28 @@
+1.Functions are used for performing the operation and it is a block which contain assignable operational codes to perform specific operation.
+2.The operation which is performed by the Functions are also known as assignable operations.
+3.Functions will be written by using two ways.
+i.function declaration
+ii.function expression
+    >anonymous function
+    >arrow function
+    >IIFE
+4.Function Declaration will be declared by using named function and named will be implemented by below syntax
+function functionName(parameterOne,parameterTwo){
+    assignable operational code;
+    return returnValue;
+}
+5.Function Expression can be expressed by using anonymous function and it will be implemented by using below syntax.
+function (){
+    assignable operational code;
+    return returnValue;
+}
+6.Function Expression can also be expressed by using arrow function and it will be implemented by using below syntax.
+()=>{
+    assignable operational code;
+    return returnValue;
+}
+7.Function Expression can also be expressed by using IIFE and it will be implemented by using below syntax.
+(()=>{
+    assignable operational code;
+    return returnValue;
+})();

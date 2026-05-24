@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    overflow: hidden;
+}
+#web_development_heading{
+    font-size: 32px;
+    font-family: ProductSans;
+    animation-name: toAnimateWebDevelopmentHeading;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal; (normal is default value will control animation effect direction from 'from state' to 'to state' and animation effect will flicker) */
+    /* animation-direction: reverse; (reverse will control animation effect direction from 'to state' to 'from state' and animation effect will flicker) */
+    /* animation-direction: alternate; (alternate will control animation effect direction from 'from state' to 'to state' and animation effect will not flicker) */
+    /* animation-direction: alternate-reverse; (alternate-reverse will control animation effect direction from 'to state' to 'from state' and animation effect will not flicker) */
+}
+/* animation logics */
+@keyframes toAnimateWebDevelopmentHeading{
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        color: darkblue;
+        transform: translateX(20%);
+        font-size: 100px;
+    }
+}

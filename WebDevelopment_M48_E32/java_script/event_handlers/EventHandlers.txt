@@ -1,0 +1,20 @@
+1.EventHandlers are attributes in HTML file and properties inside node object.
+2.EventHandlers are used for handling the event performed by the user.
+3.Event handlers are also used for calling the function from the HTML file.
+4.Some important event handlers are mentioned below.
+i.onclick
+ii.ondblclick
+iii.oninput
+iv.onkeydown
+v.onkeyup
+vi.onmousedown
+vii.onmouseup
+viii.onmouseover
+ix.onmouseup
+x.onfocus
+xi.onblur
+xii.onchange
+xiii.onload
+
+Note:In event handlers, The provided function will be loaded inside the node object.
+When the event occurs, The event object will be created and based on that The loaded function will be executed.

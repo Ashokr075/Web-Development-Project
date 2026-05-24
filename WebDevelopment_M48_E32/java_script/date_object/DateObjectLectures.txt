@@ -1,0 +1,16 @@
+DateObject :
+1.We use DateObject to manipulate the current date, day and time.
+2.DateObject will be created by using Date() which will return a string format of data which contains date, day and time.
+3.Some DateObject functions are used for manipulating the DateObject, which are given below...
+4.In real time, whenever we want to display current time or date informations we go for DateObject.
+
+getDay():number(day)
+getDate():number(date)
+getMonth():number(month)
+getFullYear():number(year)
+getHours():number(hour)
+getMinutes():number(minutes)
+getSeconds():number(seconds)
+getMilliseconds():number(milli seconds)
+toLocaleDateString():fullDate(month/date/year)
+toLocaleTimeString():hours:minutes:seconds 

@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    padding: 10px;
+}
+.buttons{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: ProductSans;
+    margin-left: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    box-shadow: inset -10px -10px 10px gray;
+}
+.display_images{
+    margin-top: 10px;
+    display: none;
+}
+#earth_image{
+    width: 200px;
+}
+#moon_image{
+    width: 215px;
+}
+#display_earth_button:hover~#earth_image{
+    display: inline-block;
+}
+#display_moon_button:hover~#moon_image{
+    display: inline-block;
+}

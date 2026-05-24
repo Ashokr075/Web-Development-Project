@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 650px;
+}
+#parent_block{
+    width: 10%;
+    height: 20%;
+    padding: 20px;
+    background-color: purple;
+}
+#child_block{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+}
+#parent_section{
+    width: 25vw;
+    height: 25vh;
+    background-color: red;
+}
+#child_section{
+    width: 50%;
+    height: 50%;
+    background-color: gray;
+}
+#parent{
+    /*
+    1rem=16px(root element font size)
+    3rem=3*root_element_font_size=48px
+    */
+    font-size: 5rem;
+    font-weight: bold;
+    width: 20vw;
+    height: 20vw;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#child{
+    /*
+    1em=1*parent_element_font_size
+    0.5em=0.5*parent_element_font_size
+    */
+    font-size: 0.5em;
+    /* font-size: 5vw; */
+    width: 50%;
+    height: 50%;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#child_content{
+    color: white;
+}
+/* overall difference between percentage and viewport units */
+#percentage_unit{
+    width: 100%;
+    height: 20vh;
+    background-color: red;
+}
+#viewport_unit{
+    width: 100vw;
+    height: 20vh;
+    background-color: orange;
+}

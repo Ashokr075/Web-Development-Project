@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    transition: all 250ms ease-in-out;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+/* common codes */
+body{
+    width: 100vw;
+    height: auto;
+}
+#responsive_navigation_bar{
+    width: 100vw;
+    height: 75px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#jspiders_logo{
+    width: 185px;
+    cursor: pointer;
+}
+#jspiders_heading{
+    font-size: 50px;
+    text-align: center;
+}
+#jspiders_heading::first-letter,#jspiders_paragraph::first-letter{
+    color: orange;
+    font-weight: bold;
+}
+#jspiders_paragraph{
+    margin: 0px 20px;
+    text-align: justify;
+}
+#toggle_checkbox{
+    display: none;
+}
+#courses_blocks_container{
+    width: 100%;
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.courses_blocks{
+    height: 200px;
+    background-color: hsl(35deg,100%,50%,0.35);
+    border-radius: 25px;
+}
+.courses_blocks_headings{
+    font-size: 35px;
+    text-align: center;
+}
+.courses_block_list{
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.courses_blocks:hover{
+    box-shadow: 0px 0px 10px orangered,0px 0px 20px orangered;
+    animation: toAnimateCoursesBlocks 500ms linear infinite alternate both;
+
+}
+/* landscape screen responsiveness */
+@media only screen and (orientation:landscape){
+    #responsive_navigation_bar_list{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: orange;
+        margin-left: auto;
+        list-style-type: none;
+    }
+    .responsive_navigation_bar_list_items{
+        font-size: 3.75vw;
+        font-weight: bold;
+    }
+    #jspiders_logo_container{
+        position: absolute;
+        left: 1vw;
+    }
+    #bars_menu_icon{
+        display: none;
+    }
+    #jspiders_paragraph{
+        font-size: 30px;
+    }
+    .courses_blocks{
+        width: 30%;
+    }
+    #courses_blocks_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+/* portrait screen responsiveness */
+@media only screen and (orientation:portrait){
+    #responsive_navigation_bar_list{
+        display: none;
+    }
+    #bars_menu_icon{
+        font-size: 30px;
+    }
+    #toggle_checkbox{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        /* offset properties */
+        right: 10px;
+    }
+    #bars_menu_icon_label{
+        position: absolute;
+        /* offset properties */
+        right: 10px;
+    }
+    #toggle_checkbox:checked~#responsive_navigation_bar_list{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        backdrop-filter: blur(2.5vw);
+        background-color: hsla(35deg,100%,50%,0.50);
+        list-style-type: none;
+        position: absolute;
+        /* offset properties */
+        top: 75px;
+        animation: toAnimateResponsiveNavigationBarList 500ms ease-in-out;
+    }
+    .responsive_navigation_bar_list_items{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #jspiders_paragraph{
+        font-size: 20px;
+    }
+    #courses_blocks_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        row-gap: 30px;
+    }
+    .courses_blocks{
+        flex-grow: 1;
+    }
+}
+/* animation logics */
+@keyframes toAnimateResponsiveNavigationBarList{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(0vw);
+    }
+}
+@keyframes toAnimateCoursesBlocks{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}

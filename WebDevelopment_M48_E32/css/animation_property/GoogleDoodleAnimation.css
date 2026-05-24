@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+body{
+    overflow: hidden;
+}
+#google_doodle_container{
+    width: 520px;
+    height: 200px;
+    position: relative;
+    top: 225px;
+    left: 384px;
+}
+.google_doodles{
+    font-size: 150px;
+    font-family: ProductSans;
+    float: left;
+    letter-spacing: -7px;
+}
+.text_royalblue{
+    color: royalblue;
+}
+.text_red{
+    color: red;
+}
+.text_orange{
+    color: orange;
+}
+.text_green{
+    color: green;
+}
+#uppercase_g_letter{
+    animation: toAnimateUpperCaseGLetter 1000ms ease-in-out infinite alternate both;
+}
+#first_o_letter{
+    animation: toAnimateFirstOLetter 750ms ease-in infinite alternate both;
+}
+#second_o_letter{
+    animation: toAnimateSecondOLetter 1000ms ease-in-out infinite alternate both;
+}
+#lowercase_g_letter{
+    animation: toAnimateLowerCaseGLetter 500ms linear infinite alternate both;
+}
+#l_letter{
+    animation: toAnimateLLetter 1500ms ease-out infinite alternate both;
+}
+#e_letter{
+    animation: toAnimateELetter 500ms linear infinite alternate-reverse both;
+}
+/* animation logics */
+@keyframes toAnimateUpperCaseGLetter{
+    from{
+        transform: rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(-360deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    75%{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+}
+@keyframes toAnimateFirstOLetter{
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(150px) rotateX(360deg) scale(3);
+    }
+}
+@keyframes toAnimateSecondOLetter{
+    from{
+        transform: skew(360deg,360deg) scale(2);
+    }
+    to{
+        transform: skew(-360deg,-360deg) scale(2);
+    }
+}
+@keyframes toAnimateLowerCaseGLetter{
+    from{
+        transform: scale(1.75);
+    }
+    to{
+        transform: scale(0.75);
+    }
+}
+@keyframes toAnimateLLetter{
+    from{
+        transform: translateY(100px) rotateZ(-360deg);
+    }
+    to{
+        transform: translateY(-200px) rotateZ(360deg) scale(3);
+    }
+}
+@keyframes toAnimateELetter{
+    from{
+        transform: scale(1.75) rotateZ(-20deg);
+    }
+    to{
+        transform: scale(0.75) rotateZ(-20deg);
+    }
+}

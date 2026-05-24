@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    overflow: hidden;
+}
+#earth_tools_container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-image: url(../../assets/images/Space.png);
+}
+.buttons{
+    font-size: 20vw;
+    font-weight: bold;
+    width: 23.5vw;
+    height: 23.5vw;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 25px gray,inset 0px 0px 50px gray;
+    cursor: pointer;
+}
+.buttons:hover{
+    color: white;
+    background-color: gray;
+}
+#earth_image{
+    width: 23.5vw;
+    position: absolute;
+    bottom: 2vh;
+}
+.buttons:hover~#earth_image{
+    transition: transform 500000ms linear;
+}
+#x_button:hover~#earth_image{
+    transform: rotateX(360deg);
+}
+#y_button:hover~#earth_image{
+    transform: rotateY(360deg);
+}
+#z_button:hover~#earth_image{
+    transform: rotateZ(360deg);
+}

@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    transition: all 250ms ease-in-out;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#indian_mountain_header_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/IndianMountains.jpg);
+    background-size: 100% 100%;
+}
+.indian_mountain_containers{
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.mountain_container_headings{
+    position: relative;
+}
+.main_headings{
+    font-size: 25vw;
+    top: 7.5vh;
+}
+.sub_headings{
+    font-size: 15.20vw;
+    bottom: 7.5vh;
+    letter-spacing: 0.5vw;
+}
+#left_mountain_container{
+    align-items: flex-end;
+    backdrop-filter: blur(0.75vw) brightness(75%);
+}
+#right_mountain_container{
+    align-items: flex-start;
+}
+#moun_heading{
+    left: 6.050vw;
+    background-size: 200% 200%;
+    background-position: 0vw -40vh;
+}
+#ntain_heading{
+    right: 5vw;
+}
+#ind_heading{
+    background-position: 0% 20%;
+}
+.left_mountain_container_headings{
+    background-image: url(../../assets/images/IndianMountains.jpg);
+    background-size: 130% 130%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+}
+#indian_mountain_navigation_bar{
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+    /* offset properties */
+    right: 0vw;
+    top: 0vh;
+}
+#indian_mountain_navigation_bar_list{
+    height: 100%;
+    font-size: 3vw;
+    font-weight: bold;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.indian_mountain_navigation_bar_list_items:hover{
+    color: white;
+    text-shadow: 0px 0px 5px black,0px 0px 10px black,0px 0px 15px black;
+}
+#arrow_buttons_container{
+    width: 15vw;
+    height: 10vh;
+    position: absolute;
+    /* offset properties */
+    right: 2.5vw;
+    bottom: 2.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.arrow_buttons{
+    font-size: 3.5vw;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px gray,inset 0px 0px 20px gray;
+}
+.arrow_buttons:hover{
+    color: white;
+    background-color: black;
+    transform: rotateZ(360deg) scale(1.25);
+    box-shadow: none;
+}
+#login_form_container{
+    width: 35vw;
+    height: 40vh;
+    padding: 0.5%;
+    position: absolute;
+    left: 32.5vw;
+    top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5vw;
+    backdrop-filter: blur(1vw);
+    border: 0.25vw solid white;
+    cursor: pointer;
+    display: none;
+}
+#login_heading{
+    font-size: 5.5vw;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.input_boxes{
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 2.35vw;
+    width: 80%;
+    padding-left: 1.5%;
+    background-color: transparent;
+    border-bottom: 0.25vw solid white;
+    text-shadow: 0px 0px 5px black;
+}
+.input_boxes::placeholder{
+    color: white;
+}
+#login_button{
+    font-size: 3vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    padding: 0.5% 2%;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+#login_button:hover{
+    animation: toAnimateLoginButton 500ms ease-in-out 500ms infinite alternate both;
+}
+#login_label{
+    cursor: pointer;
+}
+#toggle_checkbox{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5.50vh;
+    right: 0.25vw;
+    display: none;
+}
+#toggle_checkbox:checked~#login_form_container{
+    display: flex;
+    animation: toAnimateLoginFormContainer 150ms ease-in-out 100ms normal both;
+}
+/* animation logics */
+@keyframes toAnimateLoginFormContainer{
+    from{
+        transform: translate(50vw,-50vh) scale(0);
+    }
+    to{
+        transform: translate(0vw,0vh) scale(1);
+    }
+}
+@keyframes toAnimateLoginButton{
+    from{
+        transform: skew(0deg,0deg);
+    }
+    50%{
+        transform: skew(25deg,25deg);
+    }
+    to{
+        transform: skew(-25deg,-25deg);
+    }
+}

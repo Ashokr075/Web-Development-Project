@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#user_data_table{
+    font-size: 3vw;
+}
+#user_data_table_caption{
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+}
+#user_data_table_head{
+    font-size: 4vw;
+    color: orange;
+    background-color: black;
+}
+.user_data_table_head_cells{
+    padding: 10px;
+    border-radius: 10px;
+}
+#user_data_table_body{
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#pacman_image{
+    width: 5vw;
+    transition: transform 250ms linear;
+}
+#score_heading{
+    color: white;
+    font-size: 5vw;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

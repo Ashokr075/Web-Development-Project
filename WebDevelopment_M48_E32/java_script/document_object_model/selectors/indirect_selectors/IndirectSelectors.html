@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InDirectSelectors</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductSans;
+        }
+        @font-face{
+            font-family: ProductSans;
+            src: url(../../../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            padding: 20px;
+        }
+        .course_headings{
+            font-size: 5vw;
+        }
+        #buttons_container{
+            width: 35vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .pay_buttons{
+            outline: none;
+            border: none;
+            font-size: 3.5vw;
+            font-weight: bold;
+            padding: 5px 15px;
+            background-color: lightgray;
+            border-radius: 15px;
+            box-shadow: inset 0px 0px 10px gray,inset 0px 0px 20px gray;
+        }
+        #radio_buttons_container{
+            font-size: 3vw;
+            font-weight: bold;
+            color: white;
+            background-color: purple;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .gender_radio_buttons{
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <script src="IndirectSelectors.js" defer></script>
+</head>
+<body>
+    <h1 class="course_headings" id="core_java_heading">Java</h1>
+    <h1 class="course_headings" id="web_development_heading">Development</h1>
+    <div id="buttons_container">
+        <button class="pay_buttons" id="pay_now_button">Pay</button>
+        <button class="pay_buttons" id="pay_later_button">Pay</button>
+    </div>
+    <div id="radio_buttons_container">
+        <h1 id="gender_heading"></h1>
+        <input type="radio" name="Gender" id="male_radio_button" class="gender_radio_buttons"> <label for="">Male</label>
+        <input type="radio" name="Gender" id="female_radio_button" class="gender_radio_buttons"> <label for="">Female</label>
+        <input type="radio" name="Gender" id="transgender_radio_button" class="gender_radio_buttons"> <label for="">TransGender</label>
+    </div>
+</body>
+</html>

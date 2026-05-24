@@ -1,0 +1,28 @@
+1.PromiseObject represents the eventual completion of asynchronous operation.
+2.PromiseObject will confirm that, the asynchronous operation has been done and which asynchronous operation is waiting for that result can be utilized.
+3.Defaultly, each and every promise object will be having the status as pending state.
+4.We can control the status of promise object from pending state to fulfilled or rejected state and once we change, it cannot be reversed back becoz PromiseObject is im-mutable object.
+5.if the promise object status is either fulfilled or rejected, this state we call it as settled.
+6.PromiseObject is created by using below syntax.
+SYNTAX:
+new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        asynchronous operational code;
+    },timeOut);
+});
+
+i.resolve function is used for converting the promise object status from pending to fulfilled state.
+ii.reject function is used for converting the promise object status from pending to rejected state.
+iii.What we have passed inside Promise constructor is called as executor function and this function is used for providing the asynchronous operation what to be performed and executor function is providing two functions (resolve and reject)which is used for converting the pending state into either fulfilled or resolved state.
+iv.Promise Object can be handled in two ways, by usng below syntax.
+SYNTAX:
+promiseObject
+.then()
+.then()
+.then()
+.catch()
+
+(or)
+async function functionName(){
+    let promsieObjectResult=await promiseObject;
+}

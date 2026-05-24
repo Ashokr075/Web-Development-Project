@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;   
+}
+@font-face{
+    font-family: Productsans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#rainbow_heading{
+    font-family: Productsans;
+    width: fit-content;
+    font-size: 150px;
+    margin: 225px auto;
+    background-image: linear-gradient(to right,violet,indigo,blue,green,yellow,orange,red);
+    background-clip: text;
+    color: transparent;
+    background-size: 2000%;
+    background-position: left;
+    cursor: pointer;
+}
+#rainbow_heading:hover{
+    background-position: right;
+    /* transition: property duration timing-function delay; */
+    transition: background-position 1500ms linear 2500ms;
+}

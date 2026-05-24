@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+#samsung_loaders_container{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 415px;
+    animation: toAnimateSamsungLoadersContainer 2500ms linear infinite normal both;
+}
+.samsung_loaders{
+    width: 50%;
+    height: 50%;
+    float: left;
+    animation: toAnimateSamsungLoaders 1000ms ease-in-out infinite alternate both;
+}
+.black_loaders{
+    background-color: black;
+}
+.gray_loaders{
+    background-color: gray;
+}
+#first_loader{
+    border-radius: 40% 40% 0% 40%;
+}
+#second_loader{
+    border-radius: 40% 40% 40% 0%;
+}
+#third_loader{
+    border-radius: 40% 0% 40% 40%;
+}
+#fourth_loader{
+    border-radius: 0% 40% 40% 40%;
+}
+/* animation logics */
+@keyframes toAnimateSamsungLoadersContainer{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes toAnimateSamsungLoaders{
+    from,to{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.75);
+        border-radius: 50%;
+    }
+}

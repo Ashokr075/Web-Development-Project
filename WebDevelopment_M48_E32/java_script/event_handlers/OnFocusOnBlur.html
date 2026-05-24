@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFocusOnBlurEventHandler</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductSans;
+        }
+        @font-face{
+            font-family: ProductSans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #search_inputbox{
+            width: 75%;
+            height: 75px;
+            font-size: 3vw;
+            border-radius: 50px;
+            outline: none;
+            border: 3px solid darkblue;
+            padding-left: 75px;
+        }
+        #search_icon_container{
+            font-size: 3vw;
+            position: relative;
+            left: 70px;
+            color: gray;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="OnFocusOnBlur.js" defer></script>
+</head>
+<body>
+    <span id="search_icon_container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </span>
+    <input type="text" name="Search" id="search_inputbox" placeholder="Search 63,119 icons..." onfocus="createOutline()" onblur="removeOutline()">
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* first capsule */
+#capsules_container{
+    width: 300px;
+    height: 150px;
+}
+.capsules{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#black_capsule{
+    background-color: black;
+    border-radius: 50% 0% 0% 50%;
+}
+#gray_capsule{
+    background-color: gray;
+    border-radius: 0% 50% 50% 0%;
+}
+/* second capsule */
+#one_capusle{
+    width: 300px;
+    height: 150px;
+    background-image: linear-gradient(to right,black 50%,gray 50%);
+    border-radius: 75px;
+}
+/* third capsule */
+#parent_black_capsule{
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    border-radius: 75px;
+    cursor: pointer;
+}
+#child_gray_capsule{
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 0% 50% 50% 0%;
+    float: right;
+}

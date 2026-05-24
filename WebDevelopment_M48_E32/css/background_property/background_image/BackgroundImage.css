@@ -1,0 +1,60 @@
+.color_gradients_block{
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+}
+#indian_flag_patterned_block{
+    background-image: linear-gradient(to bottom right,orange 50%,white,green);
+    /*
+    linear-gradient direction control values
+    to bottom(default value)
+    to top
+    to right
+    to left
+    to top left
+    to top right
+    to bottom right
+    to bottom left
+    
+    gradient color control values
+    color 0%-100%
+    */
+}
+#rainbow_patterned_block{
+    background-image: radial-gradient(circle at bottom left,violet,indigo,blue,green,yellow,orange,red);
+    /*
+    radial-gradient circle creation control values
+    circle at center(default value)
+    circle at top
+    circle at right
+    circle at bottom
+    circle at left
+    circle at top left
+    circle at top right
+    circle at bottom right
+    circle at bottom left
+    
+    gradient color control values
+    color 0%-100%
+    */
+}
+#color_wheel_block{
+    background-image: conic-gradient(red,orange,yellow,green,aqua,darkblue,magenta,red);
+    border-radius: 50%;
+}
+#space_container{
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    background-image: url(../../../assets/images/Earth.png),url(../../../assets/images/Space.png);
+    /* background-size: width height; */
+    background-size: 50%,100% 100%;
+    /* background-repeat: repeat | no-repeat | repeat-x | repeat-y; */
+    background-repeat: no-repeat;
+    /*
+    background-position-x: x-axis_co-ordinate_value;
+    background-position-y: y-axis_co-ordinate_value;
+    background-position: x-axis_co-ordinate_value | y-axis_co-ordinate_value | top | right | bottom | left | top left | top right | bottom right | bottom left | center;
+    */
+    background-position: 25px 0px,center;
+}

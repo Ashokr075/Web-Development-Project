@@ -1,0 +1,91 @@
+#parent_container{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    cursor: pointer;
+}
+#child_container{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+}
+/*
+child selector (>)
+parent_element>child_element{
+    property: value;
+}
+*/
+#parent_container:hover>#child_container{
+    background-color: white;
+}
+#grand_parent_element{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    cursor: pointer;
+}
+#parent_element,#child_element,#grand_child_element{
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+#parent_element,#grand_child_element{
+    background-color: greenyellow;
+}
+#child_element{
+    background-color: gray;
+}
+/*
+descendent selector ( )
+ascendent_element descendent_element{
+    property: value;
+}
+*/
+#grand_parent_element:hover #child_element{
+    background-color: black;
+}
+#parent_element:hover #grand_child_element{
+    background-color: white;
+}
+.color_blocks{
+    width: 100px;
+    height: 100px;
+    float: left;
+    cursor: pointer;
+}
+#red_color_block{
+    background-color: red;
+}
+#darkblue_color_block{
+    background-color: darkblue;
+}
+#orange_color_block{
+    background-color: orange;
+}
+#white_color_block{
+    background-color: white;
+}
+#lightgreen_color_block{
+    background-color: lightgreen;
+}
+/*
+adjacent sibling selector (+)
+element+adjacent_sibling_element{
+    property: value;
+}
+*/
+#red_color_block:hover+#darkblue_color_block{
+    background-color: black;
+}
+#orange_color_block:hover+#white_color_block{
+    border: 1px solid black;
+}
+/*
+general sibling selector (~)
+element~general_sibling_element{
+    property: value;
+}
+*/
+#orange_color_block:hover~#lightgreen_color_block{
+    background-color: darkgreen;
+}

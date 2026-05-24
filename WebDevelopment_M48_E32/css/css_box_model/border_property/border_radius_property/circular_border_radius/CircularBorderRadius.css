@@ -1,0 +1,24 @@
+.border_radius_containers{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border: 30px solid gray;
+    float: left;
+}
+#square_container{
+    /* border-radius specific properties */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-radius shorthand properties */
+    /* one value */
+    border-radius: 10px;
+    /* two value */
+    border-radius: 10px 20px;
+    /* four value */
+    border-radius: 10px 20px 30px 40px;
+}
+#circular_container{
+    border-radius: 50%;
+}

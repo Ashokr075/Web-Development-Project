@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face{
+    font-family: ProductSans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+#topic_header{
+    height: 600px;
+    background-image: linear-gradient(lightpink,lightblue);
+}
+#topic_heading{
+    color: darkblue;
+    font-size: 150px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+#explore_button{
+    width: 250px;
+    font-size: 70px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 515px;
+    cursor: pointer;
+    background-color: rgb(245,245,245);
+}
+#explore_button:hover{
+    box-shadow: inset 0px 0px 25px gray;
+}
+.navigation_bars{
+    font-size: 40px;
+    text-align: center;
+    height: 50px;
+    background-color: lightgray;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+.image_containers{
+    height: 650px;
+    background-size: 100% 100%;
+}
+#mount_himalayas_image_container{
+    background-image: url(../../assets/images/MountHimalayas.jpg);
+}
+#mount_fuji_image_container{
+    background-image: url(../../assets/images/MountFuji.jpg);
+}
+#ocean_image_container{
+    background-image: url(../../assets/images/Ocean.jpg);
+}
+#forest_image_container{
+    background-image: url(../../assets/images/Forest.jpg);
+}
+#up_arrow_icon_button{
+    width: 130px;
+    height: 130px;
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: inset 0px 0px 20px gray;
+    cursor: pointer;
+    z-index: 4;
+}
+#up_arrow_icon{
+    color: darkblue;
+    font-size: 100px;
+    padding: 5px;
+}

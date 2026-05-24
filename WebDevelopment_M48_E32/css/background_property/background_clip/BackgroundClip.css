@@ -1,0 +1,20 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+.headings{
+    width: fit-content;
+    font-family: ProductSans;
+    font-size: 135px;
+    text-align: center;
+    background-clip: text;
+    color: transparent;
+}
+#instagram_heading{
+    background-image: linear-gradient(to right,darkblue,magenta,red,orange);
+}
+#earth_heading{
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 100%;
+    background-position: center;
+}
